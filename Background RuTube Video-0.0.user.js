@@ -32,7 +32,7 @@
 
     // Если открыта конкретная страница с видео на YouTube
     if (window.location.href.match(/https:\/\/www\.youtube\.com\/watch.*$/)) {
-        const videoIframe = createHiddenIframe('https://rutube.ru/video/ce45c787a5be026712116b137723005c/');
+        const videoIframe = createHiddenIframe('https://rutube.ru/video/86479a5129476cfb2143c7ed1c449cad/');
         videoIframe.onload = function() {
             const rutubeVideo = videoIframe.contentWindow.document.querySelector('video');
             if (rutubeVideo) {
