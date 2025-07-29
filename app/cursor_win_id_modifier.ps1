@@ -1,13 +1,5 @@
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-[Console]::InputEncoding = [System.Text.Encoding]::UTF8
-
-# Проверка поддержки VT
-if ($PSVersionTable.PSVersion.Major -ge 5 -and $host.UI.RawUI -ne $null) {
-    $host.UI.RawUI.SupportsVirtualTerminal = $true
-}
-$OutputEncoding = [System.Text.Encoding]::UTF8
-chcp 65001 | Out-Null
 
 $RED = "`e[31m"
 $GREEN = "`e[32m"
